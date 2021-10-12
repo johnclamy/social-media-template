@@ -1,0 +1,18 @@
+// Setup box model on the root element
+
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Basic styles
+
+body {
+  font-family: $text-font-stack;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+}
