@@ -12,7 +12,11 @@
 @import 'base/base';
 
 // 4 - Layout
-@import 'layout/header';
+@import
+  'layout/header',
+  'layout/container',
+  'layout/aside',
+  'layout/main';
 
 // 5 - Components
 
