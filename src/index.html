@@ -8,38 +8,30 @@
   <title>Social Media Template</title>
 </head>
 <body>
-  <header className='app-header'>
-    <!-- beginning menu button -->
-    <div class="app-header__menu-btn">
-      <span class="app-header__menu-btn__burger"></span>
-    </div> <!-- end menu button -->
+  <!-- beginning navbar -->
+  <nav class="navbar">
+    <!-- beginning left navbar components -->
+    <div class="navbar__nav-left">
+      <img class="navbar__nav-left__logo" src="img/logo.png" width="160" height="45" alt="Logo">
+      <ul>
+        <li><img src="img/notification.png" alt="Notification"></li>
+        <li><img src="img/inbox.png" alt="Inbox"></li>
+        <li><img src="img/video.png" alt="Video"></li>
+      </ul>
+    </div> <!-- end left navbar components -->
 
-    <!-- beginning navigation -->
-    <nav class="app-header__nav">
+    <!-- beginning right navbar components -->
+    <div class="navbar__nav-right">
+      <div class="navbar_nav-right__search">
+        <img src="img/search.png" alt="Search">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="navbar_nav-right__profile active">
+        <img src="img/profile-pic.png" alt="Profile picture">
+      </div>
+    </div> <!-- end right navbar components -->
 
-      <!-- beginning left navigation -->
-      <div class="app-header__nav__nav-left">
-        <img class="app-header__nav__nav-left__logo" src="img/logo.png" width:"160" height="45" alt="Logo">
-        <ul>
-          <li><img src="img/notification.png" alt="Notification"></li>
-          <li><img src="img/inbox.png" alt="Inbox"></li>
-          <li><img src="img/video.png" alt="Video"></li>
-        </ul>
-      </div> <!-- end left navigation -->
-
-      <!-- beginning right navigation -->
-      <div class="app-header__nav__nav-right">
-        <div class="app-header__nav_nav-right__search">
-          <img src="img/search.png" alt="Search">
-          <input type="text" placeholder="Search...">
-        </div>
-        <div class="app-header__nav_nav-right__profile active">
-          <img src="img/profile-pic.png" alt="Profile picture">
-        </div>
-      </div> <!-- end right navigation -->
-
-    </nav> <!-- end navigation -->
-  </header>
+  </nav> <!-- end navbar -->
 
   <section class="app-container">
 

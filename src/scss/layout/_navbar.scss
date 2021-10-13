@@ -1,13 +1,13 @@
-.app-header {
-
-  &__nav {
-    @include flex-center(space-between);
-    padding: ($padding * 0.25) ($padding * 4);
-    background: $app-blue;
-  }
+.navbar {
+  @include flex-center(space-between);
+  padding: ($padding * 0.25) ($padding * 4);
+  background: $app-blue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.app-header__nav__nav-left {
+.navbar__nav-left {
   display: flex;
   align-items: center;
 
@@ -24,12 +24,12 @@
   }
 }
 
-.app-header__nav__nav-right {
+.navbar__nav-right {
   display: flex;
   align-items: center;
 }
 
-.app-header__nav_nav-right__search {
+.navbar_nav-right__search {
   display: flex;
   align-items: center;
   background: $primary-bg-color;
@@ -50,7 +50,7 @@
   }
 }
 
-.app-header__nav_nav-right__profile {
+.navbar_nav-right__profile {
   img {
     width: 40px;
     margin-left: $margin * 2;
