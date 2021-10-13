@@ -1,7 +1,21 @@
 @charset "UTF-8";
 
-// Helpers
-@import 'helpers/variables';
+// 1 - Helpers
+@import 
+  'helpers/variables',
+  'helpers/functions',
+  'helpers/mixins';
 
-// Base
+// 2 - Vendors
+
+// 3 - Base
 @import 'base/base';
+
+// 4 - Layout
+@import 'layout/header';
+
+// 5 - Components
+
+// 6 - Pages
+
+// 7 - Themes

@@ -4,3 +4,9 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin flex-center($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}

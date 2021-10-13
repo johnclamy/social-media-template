@@ -12,7 +12,9 @@ html {
 // Basic styles
 
 body {
+  margin: 0;
   font-family: $text-font-stack;
   color: $primary-text-color;
   background-color: $primary-bg-color;
+  font-weight: weight(regular);
 }

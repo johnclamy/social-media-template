@@ -137,14 +137,23 @@ $border-type: solid;
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-/// Font size:
+/// Font size
 /// @type Number
-$base-font-size: 14px;
+$base-font-size: 16px;
 $font-size: 1em;
 
 /// Line hight
 /// @type Number
 $base-line-height: 1.5;
+
+/// Font weight
+/// @type List
+$font-weights: (
+  'light': 300,
+  'regular': 400,
+  'bold': 600,
+  'bolder': 700 
+);
 
 
 // Layouts
