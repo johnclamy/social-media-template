@@ -1,9 +1,61 @@
 .left-sidebar,
 .right-sidebar {
-  background: $secondary-bg-color;
   flex-basis: 25%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  height: 100vh;
+}
+
+.links {
+  border-bottom: $border-size $border-type $grey;
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: $margin * 2;
+    color: $app-blue;
+    width: fit-content;
+    font-weight: weight(bold);
+
+    img {
+      width: 25px;
+      margin-right: $margin;
+    }
+  }
+}
+
+.links a:last-child {
+  color: $app-violet;
+  font-weight: weight(light);
+  font-size: $font-size * 0.85;
+  font-style: italic;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+.shortcut-links {
+  h1 {
+    color: $primary-heading-color;
+    font-weight: weight(light);
+    font-size: $font-size * 1.3;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: $margin * 2;
+    color: $app-blue;
+    width: fit-content;
+    font-weight: weight(bold);
+
+    img {
+      width: 40px;
+      @include round-corners(4px);
+      margin-right: $margin;
+    }
+  }
 }
