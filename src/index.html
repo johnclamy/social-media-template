@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="scss/index.scss">
+  <script src="https://kit.fontawesome.com/f16e47194e.js" crossorigin="anonymous"></script>
   <title>Social Media Template</title>
 </head>
 <body>
@@ -58,7 +59,72 @@
     <main class="main-content"></main> <!-- end main content -->
 
     <!-- beginning right sidebar -->
-    <aside class="right-sidebar"></aside> <!-- end right sidebar -->
+    <aside class="right-sidebar">
+      <section class="right-sidebar__title">
+        <span>events</span>
+        <a href="#">see all...</a>
+      </section>
+      <article>
+        <section class="right-sidebar__event">
+          <div class="right-sidebar__event__left">
+            <p>23</p>
+            <span>Sept</span>
+          </div>
+          <div class="right-sidebar__event__right">
+            <h2>flutter open event</h2>
+            <p><i class="fas fa-map-marker-alt"></i> london mobile centre</p>
+            <a href="#">more info...</a>
+          </div>
+        </section>
+        <section class="right-sidebar__event">
+          <div class="right-sidebar__event__left">
+            <p>11</p>
+            <span>Dec</span>
+          </div>
+          <div class="right-sidebar__event__right">
+            <h2>social media</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Croydon Tech Park</p>
+            <a href="#">more info...</a>
+          </div>
+        </section>
+      </article>
+      
+      <section class="ads">
+        <div class="right-sidebar__title">
+          <span>advertisement</span>
+          <a href="#">close</a>
+        </div>
+        <img src="img/advertisement.png" alt="ads">
+      </section>
+
+      <section class="chats">
+        <div class="right-sidebar__title">
+          <span>conversations</span>
+          <a href="#">hide chat</a>
+        </div>
+
+        <div class="chat-list">
+          <div class="chat-item">
+            <div class="active">
+              <img src="img/member-1.png" alt="user">
+            </div>
+            <p>Alana Conway Petersen</p>
+          </div>
+           <div class="chat-item">
+            <div class="active">
+              <img src="img/member-2.png" alt="user">
+            </div>
+            <p>Xavier Rodriguez</p>
+          </div>
+          <div class="chat-item">
+            <div class="active">
+              <img src="img/member-3.png" alt="user">
+            </div>
+            <p>Joyce Deolittle</p>
+          </div>    
+        </div>
+      </section>
+    </aside> <!-- end right sidebar -->
   </section>
 </body>
 </html>

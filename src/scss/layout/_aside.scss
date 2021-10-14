@@ -25,22 +25,12 @@
 }
 
 .links a:last-child {
-  color: $app-violet;
-  font-weight: weight(light);
-  font-size: $font-size * 0.85;
-  font-style: italic;
-  word-spacing: 3px;
-  letter-spacing: 1px;
+  @include see-more();
 }
 
 .shortcut-links {
   h1 {
-    color: $primary-heading-color;
-    font-weight: weight(light);
-    font-size: $font-size * 1.3;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+    @include subheading(capitalize);
   }
 
   a {
@@ -58,4 +48,111 @@
       margin-right: $margin;
     }
   }
+}
+
+.right-sidebar {
+  background: $white;
+  padding: $padding * 1.25;
+  @include round-corners(4px);
+
+  &__title {
+    @include flex-center(space-between);
+    margin-bottom: $margin * 1.12;    
+
+    span {
+      @include subheading(uppercase);
+      font-size: $font-size * 0.95;
+    }
+
+    a {
+      @include see-more();
+    }
+  }  
+}
+
+.right-sidebar__event {
+  display: flex;
+  margin-bottom: $margin * 1.5;
+  font-size: $font-size * 0.88;
+
+  &__left {
+    @include round-corners(10px);
+    text-align: center;
+    font-weight: weight(bold);
+    color: $app-violet;
+    height: 65px;
+    width: 65px;
+    position: relative;
+    margin-right: $margin * 1.5;
+    padding-top: $padding * 0.63;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(131, 56, 236, 0.5);
+
+    p {
+      font-size: $font-size * 1.1;
+    }
+
+    span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: $app-violet;
+      color: $white;
+      font-size: $font-size * 0.95;
+      padding: ($padding * 0.35) 0;
+    }
+  }
+
+  &__right {
+    h2 {
+      color: $secondary-heading-color;
+      text-transform: capitalize;
+      font-size: $font-size * 1.1;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: $margin * 0.6;
+      margin-top: 0;
+      font-size: $font-size * 0.95;
+      text-transform: capitalize;
+    }
+
+    a {
+      @include see-more();
+    }
+  }
+}
+
+.ads {
+  margin: ($margin * 2) 0 $margin 0;
+
+  img {
+    width: 100%;
+    margin-bottom: $margin * 1.25;
+    @include round-corners(4px);
+  }
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: $margin * 1.25;
+
+  .active {
+    width: 40px;
+    @include round-corners(4px);
+    margin-right: $margin;
+
+    img {
+      width: 40px;
+      @include round-corners(50%);
+    }
+  }
+}
+
+.chat-item .active::after {
+  top: unset;
+  bottom: 4px;
 }
