@@ -69,3 +69,51 @@
   border: 0;
   width: 35px;
 }
+
+.main-write-post {
+  width: 93%;
+  background: $white;
+  @include round-corners(6px);
+  padding: $padding * 1.25;
+  columns: $app-orange;
+
+  &__user {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 45px;
+      @include round-corners(50%);
+      margin-right: $margin * 0.625;
+    }
+
+    &__profile {
+      h2 {
+        margin: 0 0 ($margin * 0.3) 0;
+        font-size: $font-size * 0.85;
+        font-weight: weight(regular);
+      }
+
+      p {
+        margin: 0;
+        color: $app-violet;
+        font-size: $font-size * 0.75;
+        font-weight: weight(light);
+        font-style: italic;
+      }
+    }
+  }
+
+  &__editor {
+    padding: ($padding * 1.25) 0  0 ($padding * 3.44);
+
+    textarea {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      border-bottom: $border-size $border-type $secondary-border-color;
+      background: transparent;
+      resize: none;
+    }
+  }
+}
